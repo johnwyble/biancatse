@@ -35,9 +35,10 @@
 
   /* ---- Nav ---- */
   header#nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s ease,box-shadow .3s ease,padding .3s ease;padding:1.1rem 0}
-  header#nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-  .nav-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--font-head);font-weight:700;font-size:1.15rem;color:var(--text-light);transition:color .3s ease}
-  .nav-logo img{height:46px;width:auto}
+  header#nav .wrap{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+  .nav-links{margin-top:.2rem}
+  .nav-logo{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;text-decoration:none;font-family:var(--font-head);font-weight:700;font-size:1.15rem;line-height:1;color:var(--text-light);transition:color .3s ease}
+  .nav-logo img{height:168px;width:auto;max-width:70vw;display:block}
   .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
   .nav-links a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--text-light);transition:color .2s ease;position:relative}
   .nav-links a:hover{color:var(--accent)}
@@ -229,7 +230,7 @@ function renderNav(cfg){
   const nav=cfg.nav||{}, header=document.getElementById("nav");
   const logo=document.getElementById("navLogo");
   logo.href="#top";
-  logo.innerHTML = (nav.logo?`<img src="${esc(nav.logo)}" alt="${esc(cfg.site.candidateName||'')}"/>`:"") + `<span>${esc(nav.logoText||cfg.site.candidateName||"")}</span>`;
+  logo.innerHTML = `<span>${esc(nav.logoText||cfg.site.candidateName||"")}</span>` + (nav.logo?`<img src="${esc(nav.logo)}" alt="${esc(cfg.site.candidateName||'')} campaign logo"/>`:"");
   const ul=document.getElementById("navLinks");
   const links=(nav.links||[]).map(l=>`<li><a href="${esc(l.href)}">${esc(l.label)}</a></li>`).join("");
   const cta = nav.ctaText?`<li><a class="btn btn-primary nav-cta" href="${esc(nav.ctaLink||'#')}" target="_blank" rel="noopener">${esc(nav.ctaText)}</a></li>`:"";

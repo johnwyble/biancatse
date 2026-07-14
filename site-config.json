@@ -24,7 +24,7 @@
     }
   },
   "nav": {
-    "logo": "",
+    "logo": "images/bianca-logo.png",
     "logoText": "Bianca Tse for Judge",
     "links": [
       { "label": "Home", "href": "#top" },
@@ -38,7 +38,7 @@
   "sectionOrder": ["hero", "about", "issues", "endorsements", "volunteer"],
   "hero": {
     "image": "images/hero-bianca.jpg",
-    "imagePosition": "35% center",
+    "imagePosition": "30% center",
     "tagline": "Experience. Integrity. Fairness.",
     "headline": "Ready on Day One",
     "subhead": "Bianca Tse is the only former King County prosecutor in this race — a Bellevue attorney with nearly 30 years in Washington courtrooms, ready to serve as a fair and thoughtful judge.",
