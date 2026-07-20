@@ -27,15 +27,33 @@
     "logo": "images/bianca-logo.png",
     "logoText": "Bianca Tse for Judge",
     "links": [
-      { "label": "Home", "href": "#top" },
-      { "label": "Meet Bianca", "href": "#about" },
-      { "label": "Endorsements", "href": "#endorsements" },
-      { "label": "Get Involved", "href": "#get-involved" }
+      {
+        "label": "Home",
+        "href": "#top"
+      },
+      {
+        "label": "Meet Bianca",
+        "href": "#about"
+      },
+      {
+        "label": "Endorsements",
+        "href": "#endorsements"
+      },
+      {
+        "label": "Get Involved",
+        "href": "#get-involved"
+      }
     ],
     "ctaText": "Donate",
     "ctaLink": "https://secure.anedot.com/friends-of-bianca-tse-for-judge/bianca-tse-for-judge"
   },
-  "sectionOrder": ["hero", "about", "issues", "endorsements", "volunteer"],
+  "sectionOrder": [
+    "hero",
+    "about",
+    "issues",
+    "endorsements",
+    "volunteer"
+  ],
   "hero": {
     "image": "images/hero-bianca.jpg",
     "imagePosition": "30% center",
@@ -85,57 +103,164 @@
         "title": "Judicial",
         "icon": "gavel",
         "items": [
-          { "name": "Lisa O'Toole", "title": "Presiding Judge\nKing County District Court\nEast Division" },
-          { "name": "Matthew York", "title": "Judge\nKing County District Court\nSouth Division" },
-          { "name": "Jeff Gregory", "title": "Judge\nMercer Island Municipal Court" },
-          { "name": "Cindi Port", "title": "Judge\nKing County Superior Court" },
-          { "name": "Haydee Vargas", "title": "Judge\nKing County Superior Court" },
-          { "name": "Hilary Madsen", "title": "Judge\nKing County Superior Court" },
-          { "name": "Risa Woo", "title": "Judge\nMaple Valley Municipal Court" },
-          { "name": "Yvonne Chin", "title": "Judge\nKing County District Court" },
-          { "name": "Kristin Richardson", "title": "Judge, Retired\nKing County Superior Court" },
-          { "name": "Sergio Flores", "title": "Judge\nTacoma Municipal Court" },
-          { "name": "Dee Sonntag", "title": "Judge\nTacoma Municipal Court" },
-          { "name": "Dean Lum", "title": "Judge, Former\nKing County Superior Court" }
+          {
+            "name": "Lisa O'Toole",
+            "title": "Presiding Judge\nKing County District Court\nEast Division"
+          },
+          {
+            "name": "Matthew York",
+            "title": "Judge\nKing County District Court\nSouth Division"
+          },
+          {
+            "name": "Jeff Gregory",
+            "title": "Judge\nMercer Island Municipal Court"
+          },
+          {
+            "name": "Cindi Port",
+            "title": "Judge\nKing County Superior Court"
+          },
+          {
+            "name": "Haydee Vargas",
+            "title": "Judge\nKing County Superior Court"
+          },
+          {
+            "name": "Hilary Madsen",
+            "title": "Judge\nKing County Superior Court"
+          },
+          {
+            "name": "Risa Woo",
+            "title": "Judge\nMaple Valley Municipal Court"
+          },
+          {
+            "name": "Yvonne Chin",
+            "title": "Judge\nKing County District Court"
+          },
+          {
+            "name": "Kristin Richardson",
+            "title": "Judge, Retired\nKing County Superior Court"
+          },
+          {
+            "name": "Sergio Flores",
+            "title": "Judge\nTacoma Municipal Court"
+          },
+          {
+            "name": "Dee Sonntag",
+            "title": "Judge\nTacoma Municipal Court"
+          },
+          {
+            "name": "Dean Lum",
+            "title": "Judge, Former\nKing County Superior Court"
+          },
+          {
+            "name": "Brian McDonald",
+            "title": "Judge\nKing County Superior Court"
+          },
+          {
+            "name": "Sean O'Donnell",
+            "title": "Judge\nKing County Superior Court"
+          }
         ]
       },
       {
         "title": "Elected Officials",
         "icon": "check",
         "items": [
-          { "name": "Dan Satterberg", "title": "Former King County Prosecutor" },
-          { "name": "Manka Dhingra", "title": "State Senator\n45th Legislative District" },
-          { "name": "My-Linh Thai", "title": "Representative\n41st Legislative District" },
-          { "name": "Mo Malakoutian", "title": "Mayor\nBellevue" },
-          { "name": "Julie Hsieh", "title": "City Council Member\nMercer Island" },
-          { "name": "Amy Lam", "title": "City Council Member\nSammamish" },
-          { "name": "Kelly Jiang", "title": "City Council Member\nIssaquah" },
-          { "name": "Will Chen", "title": "City Council Member\nEdmonds" },
-          { "name": "Menka Soni", "title": "City Council Member\nRedmond" },
-          { "name": "Jennifer Robertson", "title": "City Council Member, Retired\nBellevue" },
-          { "name": "Paul Charbonneau", "title": "Deputy Mayor\nNewcastle" },
-          { "name": "Ariana Sherlock", "title": "Mayor\nNewcastle" },
-          { "name": "Chris Villasenor", "title": "City Council Member\nNewcastle" },
-          { "name": "Jared Nieuwenhuis", "title": "City Council Member\nBellevue" },
-          { "name": "Claire Sumadiwirya", "title": "City Council Member\nBellevue" },
-          { "name": "Sun Burford", "title": "City Council Member\nNewcastle" }
+          {
+            "name": "Dan Satterberg",
+            "title": "Former King County Prosecutor"
+          },
+          {
+            "name": "Manka Dhingra",
+            "title": "State Senator\n45th Legislative District"
+          },
+          {
+            "name": "My-Linh Thai",
+            "title": "Representative\n41st Legislative District"
+          },
+          {
+            "name": "Mo Malakoutian",
+            "title": "Mayor\nBellevue"
+          },
+          {
+            "name": "Julie Hsieh",
+            "title": "City Council Member\nMercer Island"
+          },
+          {
+            "name": "Amy Lam",
+            "title": "City Council Member\nSammamish"
+          },
+          {
+            "name": "Kelly Jiang",
+            "title": "City Council Member\nIssaquah"
+          },
+          {
+            "name": "Will Chen",
+            "title": "City Council Member\nEdmonds"
+          },
+          {
+            "name": "Menka Soni",
+            "title": "City Council Member\nRedmond"
+          },
+          {
+            "name": "Jennifer Robertson",
+            "title": "City Council Member, Retired\nBellevue"
+          },
+          {
+            "name": "Paul Charbonneau",
+            "title": "Deputy Mayor\nNewcastle"
+          },
+          {
+            "name": "Ariana Sherlock",
+            "title": "Mayor\nNewcastle"
+          },
+          {
+            "name": "Chris Villasenor",
+            "title": "City Council Member\nNewcastle"
+          },
+          {
+            "name": "Jared Nieuwenhuis",
+            "title": "City Council Member\nBellevue"
+          },
+          {
+            "name": "Claire Sumadiwirya",
+            "title": "City Council Member\nBellevue"
+          },
+          {
+            "name": "Sun Burford",
+            "title": "City Council Member\nNewcastle"
+          }
         ]
       },
       {
         "title": "Ratings",
         "icon": "star",
         "items": [
-          { "name": "Joint Asian Judicial Evaluations Committee", "title": "Exceptionally Well-Qualified" },
-          { "name": "Latino Bar Association", "title": "Exceptionally Well-Qualified" },
-          { "name": "Loren Miller Bar Association", "title": "Exceptionally Well-Qualified" }
+          {
+            "name": "Joint Asian Judicial Evaluations Committee",
+            "title": "Exceptionally Well-Qualified"
+          },
+          {
+            "name": "Latino Bar Association",
+            "title": "Exceptionally Well-Qualified"
+          },
+          {
+            "name": "Loren Miller Bar Association",
+            "title": "Exceptionally Well-Qualified"
+          }
         ]
       },
       {
         "title": "Organizations",
         "layout": "logos",
         "items": [
-          { "name": "Washington Chinese American PAC", "logo": "images/wcapac-logo.png" },
-          { "name": "National Women's Political Caucus", "logo": "images/nwpc-logo.png" }
+          {
+            "name": "Washington Chinese American PAC",
+            "logo": "images/wcapac-logo.png"
+          },
+          {
+            "name": "National Women's Political Caucus",
+            "logo": "images/nwpc-logo.png"
+          }
         ]
       }
     ]
@@ -149,12 +274,47 @@
       "headline": "Sign Up to Help",
       "intro": "Tell us how you'd like to pitch in and we'll be in touch.",
       "fields": [
-        { "type": "text", "name": "firstName", "label": "First name", "required": true },
-        { "type": "text", "name": "lastName", "label": "Last name" },
-        { "type": "email", "name": "email", "label": "Email", "required": true },
-        { "type": "tel", "name": "phone", "label": "Phone" },
-        { "type": "select", "name": "helpWith", "label": "I'd like to help by", "options": ["Putting up a yard sign", "Hosting an event for Bianca", "Endorsing Bianca", "Knocking on doors", "Writing a letter to the editor", "Making a donation by check", "Other (describe below)"] },
-        { "type": "textarea", "name": "message", "label": "Message" }
+        {
+          "type": "text",
+          "name": "firstName",
+          "label": "First name",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "lastName",
+          "label": "Last name"
+        },
+        {
+          "type": "email",
+          "name": "email",
+          "label": "Email",
+          "required": true
+        },
+        {
+          "type": "tel",
+          "name": "phone",
+          "label": "Phone"
+        },
+        {
+          "type": "select",
+          "name": "helpWith",
+          "label": "I'd like to help by",
+          "options": [
+            "Putting up a yard sign",
+            "Hosting an event for Bianca",
+            "Endorsing Bianca",
+            "Knocking on doors",
+            "Writing a letter to the editor",
+            "Making a donation by check",
+            "Other (describe below)"
+          ]
+        },
+        {
+          "type": "textarea",
+          "name": "message",
+          "label": "Message"
+        }
       ],
       "submitText": "Count Me In",
       "successMessage": "Thank you! We'll be in touch soon."
@@ -172,8 +332,14 @@
     "disclaimer": "",
     "email": "info@biancaforjudge.org",
     "extraLinks": [
-      { "label": "Terms", "href": "#" },
-      { "label": "Privacy", "href": "#" }
+      {
+        "label": "Terms",
+        "href": "#"
+      },
+      {
+        "label": "Privacy",
+        "href": "#"
+      }
     ]
   }
 }
