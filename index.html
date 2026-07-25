@@ -157,8 +157,11 @@
   footer a{color:var(--text-light);text-decoration:none;opacity:.9}
   footer a:hover{opacity:1;color:var(--accent)}
   .foot-links{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:.6rem}
-  .foot-social{display:flex;gap:1rem;margin-top:.4rem}
-  .foot-social a{font-size:1.3rem}
+  .foot-social{display:flex;gap:.7rem;margin-top:.8rem}
+  .foot-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);transition:background .2s ease,transform .2s ease}
+  .foot-social a:hover{background:var(--accent);transform:translateY(-2px)}
+  .foot-social svg{width:20px;height:20px;fill:var(--text-light)}
+  .foot-social a:hover svg{fill:var(--primary)}
   .foot-legal{border-top:1px solid rgba(255,255,255,.18);margin-top:2.2rem;padding-top:1.4rem;font-size:.82rem;opacity:.75;line-height:1.6}
 
   /* ---- Responsive ---- */
@@ -408,8 +411,14 @@ function renderSections(cfg){
 
 function renderFooter(cfg){
   const f=cfg.footer||{}, soc=cfg.social||{};
-  const socIcons={facebook:"Facebook",instagram:"Instagram",twitter:"X",tiktok:"TikTok",youtube:"YouTube"};
-  const socHTML=Object.keys(socIcons).filter(k=>soc[k]).map(k=>`<a href="${esc(soc[k])}" target="_blank" rel="noopener">${socIcons[k]}</a>`).join("");
+  const socIcons={
+    facebook:{label:"Facebook",svg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.58v1.87h2.78l-.45 2.91h-2.33V22c4.78-.79 8.45-4.94 8.45-9.94z"/></svg>'},
+    instagram:{label:"Instagram",svg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.98c-3.15 0-3.5.01-4.74.07-.95.04-1.46.2-1.8.33-.45.18-.78.39-1.12.73-.34.34-.55.67-.73 1.12-.13.34-.29.85-.33 1.8-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.95.2 1.46.33 1.8.18.45.39.78.73 1.12.34.34.67.55 1.12.73.34.13.85.29 1.8.33 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.95-.04 1.46-.2 1.8-.33.45-.18.78-.39 1.12-.73.34-.34.55-.67.73-1.12.13-.34.29-.85.33-1.8.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.95-.2-1.46-.33-1.8a3.02 3.02 0 0 0-.73-1.12 3.02 3.02 0 0 0-1.12-.73c-.34-.13-.85-.29-1.8-.33-1.24-.06-1.59-.07-4.74-.07zm0 3.37a5.13 5.13 0 1 1 0 10.26 5.13 5.13 0 0 1 0-10.26zm0 8.46a3.33 3.33 0 1 0 0-6.66 3.33 3.33 0 0 0 0 6.66zm6.53-8.68a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>'},
+    twitter:{label:"X",svg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.81-5.96 6.81H1.69l7.73-8.83L1.26 2.25h6.82l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L6.99 4.13H5.03l12.05 15.64z"/></svg>'},
+    tiktok:{label:"TikTok",svg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.84-2.48V9.77a5.71 5.71 0 1 0 4.93 5.65V8.69a7.3 7.3 0 0 0 4.28 1.38V6.98a4.28 4.28 0 0 1-3.22-1.16z"/></svg>'},
+    youtube:{label:"YouTube",svg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.55 15.57V8.43L15.8 12l-6.25 3.57z"/></svg>'}
+  };
+  const socHTML=Object.keys(socIcons).filter(k=>soc[k]).map(k=>`<a href="${esc(soc[k])}" target="_blank" rel="noopener" aria-label="${socIcons[k].label}" title="${socIcons[k].label}">${socIcons[k].svg}</a>`).join("");
   const links=(f.extraLinks||[]).map(l=>`<a href="${esc(l.href)}">${esc(l.label)}</a>`).join("");
   document.getElementById("footer").innerHTML=`<div class="wrap"><div class="foot-grid">
     <div><div class="foot-brand">${esc(cfg.site.candidateName||"")}</div>
